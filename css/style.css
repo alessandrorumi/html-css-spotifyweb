@@ -6,7 +6,7 @@
 
 :root {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   color: #a3a3a3;
 }
 
@@ -16,27 +16,25 @@ li {
 
 h4 {
   color: white;
-  margin: 20px 0;
+  margin: 1.7rem 0 1.25rem;
 }
 
 /* Macrosezioni  */
 
 #wrapper-up {
-  /* DEBUG */
-  height: 1000px;
-  /* height: calc(100vh - 100px); */
+  height: calc(100vh - 60px);
   display: flex;
 }
 
 #wrapper-down {
   background-color: #282828;
-  height: 100px;
+  height: 60px;
 }
 
 #main-content {
   flex-grow: 1;
   background-color: #141922;
-  height: 100%;
+  height: calc(100vh - 60px);
   overflow-y: auto;
 }
 
@@ -46,15 +44,16 @@ h4 {
   background-color: #000000;
   width: 250px;
   height: 100%;
-  padding: 20px;
+  padding: 1.7rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: hidden;
 }
 
 #logo-image {
   width: 75%;
-  margin-bottom: 20px;
+  margin-bottom: 1.7rem;
 }
 
 #logo-image img {
@@ -72,12 +71,12 @@ h4 {
 li {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.85rem;
 }
 
 li img {
-  width: 28px;
-  margin-right: 5px;
+  width: 2.3rem;
+  margin-right: 0.42rem;
   filter: invert(100%) sepia(2%) saturate(420%) hue-rotate(7deg) brightness(116%) contrast(0%);
 }
 
@@ -88,23 +87,23 @@ li img {
 
 #plus {
   background-color: #a3a3a3;
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
+  width: 3.3rem;
+  height: 3.3rem;
+  margin-right: 0.42rem;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 0.85rem;
 }
 
 .playlist li {
-  margin-bottom: 20px;
+  margin-bottom: 1.7rem;
 }
 
 .playlist li:first-child {
-  margin-top: 10px;
+  margin-top: 0.85rem;
 }
 
 #plus i {
-  font-size: 25px;
+  font-size: 2.1rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -113,7 +112,7 @@ li img {
 
 hr {
   color: #a3a3a3;
-  margin: 10px 0;
+  margin: 0.85rem 0;
 }
 
 #account {
@@ -122,8 +121,8 @@ hr {
 }
 
 #user-image {
-width: 28px;
-height: 28px;
+width: 2.3rem;
+height: 2.3rem;
 }
 
 #user-image img {
@@ -136,9 +135,36 @@ height: 28px;
 #user-name {
   color: white;
   font-weight: bold;
-  padding-left: 10px;
+  padding-left: 0.85rem;
 }
 
 .sidebar-bottom.mobile {
   display: none;
+}
+
+/* Contenuto Principale */
+
+.topbar {
+  background-color: #080b12;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.subscribe a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 1.5rem;
 }
