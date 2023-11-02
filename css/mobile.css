@@ -1,0 +1,33 @@
+@media all and (max-width: 480px) {
+  #sidebar {
+    width: 60px;
+    padding: 5px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  #logo-image {
+    display: none;
+  }
+
+  .media {
+    display: none;
+  }
+
+  .media.mobile {
+    display: block;
+  }
+
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .sidebar-bottom.mobile {
+    display: block;
+  }
+
+  .install.mobile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
