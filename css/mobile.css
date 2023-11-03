@@ -5,5 +5,36 @@
     margin: 0 auto;
     align-items: center;
     overflow: initial;
+    justify-content: space-between;
+  }
+  #logo-image,
+  .media span,
+  h4,
+  #create-playlist,
+  #playlist-list,
+  .install span,
+  hr,
+  #user-name {
+    display: none;
+  }
+
+  .fa-circle-arrow-down {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .install {
+    text-align: center;
+  }
+
+  #home img {
+    filter: contrast(0%);
+  }
+
+  li img {
+    margin-right: 0;
+  }
+
+  #mini-logo {
+    display: block;
   }
 }
