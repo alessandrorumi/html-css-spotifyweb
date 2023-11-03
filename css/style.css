@@ -220,3 +220,45 @@ h3 {
 #most-popular-artists img {
   border-radius: 50%;
 }
+
+/* Player */
+
+.player-container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.7rem;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.mini-album {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.mini-album img{
+  width: 100%;
+}
+
+.player-container h4 {
+  margin: 0;
+}
+
+.album-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 4rem;
+}
+
+.love-and-folder i {
+  font-size: 1.35rem;
+  padding: 0 0.65rem;
+}
