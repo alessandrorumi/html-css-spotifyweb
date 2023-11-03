@@ -42,17 +42,18 @@ h4 {
 
 #sidebar {
   background-color: #000000;
-  width: 250px;
+  width: 200px;
   height: 100%;
   padding: 1.7rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow-y: hidden;
+  flex-shrink: 0;
 }
 
 #logo-image {
-  width: 75%;
+  width: 65%;
   margin-bottom: 1.7rem;
 }
 
@@ -144,6 +145,8 @@ height: 2.3rem;
 
 /* Contenuto Principale */
 
+/* Topbar */
+
 .topbar {
   background-color: #080b12;
   height: 60px;
@@ -159,12 +162,56 @@ height: 2.3rem;
   border-radius: 2rem;
   margin: 1rem;
 }
-
+/* Nav */
 nav ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav li {
   margin: 1.5rem;
+  display: block;
+}
+
+/* Album */
+
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+h3 {
+  color: white;
+  font-size: 1.15rem;
+}
+
+.title {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  width: calc((100% / 6) - 1rem);
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.album-image img {
+  width: 100%;
+}
+
+.album-title {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
 }

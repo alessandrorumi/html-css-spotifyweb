@@ -1,9 +1,10 @@
 @media all and (max-width: 480px) {
   #sidebar {
-    width: 60px;
-    padding: 5px;
+    width: 40px;
+    padding: 0.42rem;
     margin: 0 auto;
     align-items: center;
+    overflow: initial;
   }
   
   #logo-image {
@@ -28,6 +29,10 @@
 
   .install.mobile {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.7rem;
+  }
+
+  li img {
+    margin-right: 0;
   }
 }
