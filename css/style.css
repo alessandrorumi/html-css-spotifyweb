@@ -21,12 +21,12 @@ h4 {
 
 /* Macrosezioni  */
 
-#wrapper-up {
+#wrapper-top {
   height: calc(100vh - 60px);
   display: flex;
 }
 
-#wrapper-down {
+#wrapper-bottom {
   background-color: #282828;
   height: 60px;
 }
@@ -172,6 +172,7 @@ nav ul {
 nav li {
   margin: 1.5rem;
   display: block;
+  font-weight: bold;
 }
 
 /* Album */
@@ -189,7 +190,7 @@ h2 {
 
 h3 {
   color: white;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
 }
 
 .title {
@@ -214,4 +215,8 @@ h3 {
 
 .subtitle {
   margin-top: 0.5rem;
+}
+
+#most-popular-artists img {
+  border-radius: 50%;
 }
