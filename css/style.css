@@ -6,12 +6,26 @@
 
 :root {
   font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   color: #a3a3a3;
 }
 
 li {
   list-style-type: none;
+}
+
+li:hover {
+  cursor: pointer;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #a3a3a3;
+}
+
+a:hover {
+  color: white;
 }
 
 h4 {
@@ -105,6 +119,19 @@ li img {
   margin-bottom: 0.85rem;
 }
 
+#create-playlist:hover {
+  cursor: pointer;
+}
+
+#create-playlist:hover #create-playlist-title a {
+  color: white;
+}
+
+#create-playlist:hover #plus {
+  background-color: white;
+}
+
+
 .playlist li {
   margin-bottom: 1.7rem;
 }
@@ -175,6 +202,12 @@ height: 2.3rem;
   border-radius: 2rem;
   margin: 1rem;
 }
+
+.subscribe a:hover {
+  padding: 1.1rem;
+  font-size: 1.1rem;
+}
+
 /* Nav */
 
 nav {
@@ -286,6 +319,22 @@ h3 {
 .love-and-folder i {
   font-size: 1.35rem;
   padding: 0 0.65rem;
+  color: #a3a3a3;
+}
+
+.love-and-folder i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.song-title {
+  font-weight: bold;
+}
+
+.song-title:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Midlle Section */
@@ -304,14 +353,22 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.music-controls i:hover {
+  cursor: pointer;
+}
+
 .fa-circle-play {
   font-size: 2.5rem;
   padding: 0 1.5rem;
   margin-bottom: 1rem;
 }
 
+.fa-circle-play:hover {
+  font-size: 2.6rem;
+}
+
 .music-bar {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -321,8 +378,28 @@ h3 {
   background-color: #454545;
   height: 4px;
   border-radius: 1rem;
-  width: 100%;
+  width: 95%;
   margin: 0 1rem;
+}
+
+.bar:hover {
+  cursor: pointer;
+}
+
+.bar.hidden {
+  width: 8rem;
+  background-color: greenyellow;
+  position: absolute;
+  margin-left: 0;
+  display: none;
+}
+
+.bar:hover .bar.shown {
+  display: none;
+}
+
+.bar:hover .bar.hidden {
+  display: block;
 }
 
 /* Right Section */
@@ -341,4 +418,8 @@ h3 {
 .right-section .bar {
   margin: 0;
   width: 10rem;
+}
+
+.right-section .bar.hidden {
+  width: 4rem;
 }
