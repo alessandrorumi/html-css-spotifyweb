@@ -22,6 +22,7 @@ li:hover {
 a {
   text-decoration: none;
   color: #a3a3a3;
+  font-weight: bold;
 }
 
 a:hover {
@@ -43,6 +44,8 @@ h4 {
 #wrapper-bottom {
   background-color: #282828;
   height: 80px;
+  position: sticky;
+  z-index: 100;
 }
 
 #main-content {
@@ -61,8 +64,6 @@ h4 {
   padding: 1.7rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  overflow-y: hidden;
   flex-shrink: 0;
 }
 
@@ -96,7 +97,7 @@ h4 {
 li {
   display: flex;
   align-items: center;
-  margin-bottom: 0.85rem;
+  margin-bottom: 1.25rem;
 }
 
 li img {
@@ -131,12 +132,16 @@ li img {
   background-color: white;
 }
 
+#playlist-list {
+  flex-grow: 1;
+  overflow-y: auto;
+}
 
-.playlist li {
+.create-playlist li {
   margin-bottom: 1.7rem;
 }
 
-.playlist li:first-child {
+.create-playlist li:first-child {
   margin-top: 0.85rem;
 }
 
@@ -302,6 +307,7 @@ h3 {
 
 .subtitle {
   margin-top: 0.5rem;
+  font-weight: bold;
 }
 
 #most-popular-artists img {

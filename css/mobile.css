@@ -6,33 +6,4 @@
     align-items: center;
     overflow: initial;
   }
-  
-  #logo-image {
-    display: none;
-  }
-
-  .media {
-    display: none;
-  }
-
-  .media.mobile {
-    display: block;
-  }
-
-  .sidebar-bottom {
-    display: none;
-  }
-
-  .sidebar-bottom.mobile {
-    display: block;
-  }
-
-  .install.mobile {
-    text-align: center;
-    margin-bottom: 1.7rem;
-  }
-
-  li img {
-    margin-right: 0;
-  }
 }
