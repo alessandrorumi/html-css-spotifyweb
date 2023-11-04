@@ -9,7 +9,7 @@
   }
   #logo-image,
   .media span,
-  h4,
+  h4:not(#sinister),
   #create-playlist,
   #playlist-list,
   .install span,
@@ -36,5 +36,13 @@
 
   #mini-logo {
     display: block;
+  }
+
+  .topbar {
+    width: calc(100% - 40px);
+  }
+
+  .fa-circle-play:hover {
+    font-size: 2rem
   }
 }

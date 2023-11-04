@@ -2,4 +2,8 @@
   .card {
     width: calc((100% / 4) - 1rem);
   }
+
+  .album-name {
+    margin-right: 0.6rem;
+  }
 }

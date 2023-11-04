@@ -2,5 +2,23 @@
   .card {
     width: calc((100% / 2) - 1rem);
   }
+  .right-section {
+    min-width: 0;
+  }
 
+  .right-section .bar {
+    margin: 0;
+    width: 5rem;
+  }
+
+  .love-and-folder {
+    width: 1rem;
+  }
+
+  .album-name {
+    margin-right: 0.2rem;
+  }
+  .love-and-folder i {
+    padding: 0 0.15rem;
+  }
 }
