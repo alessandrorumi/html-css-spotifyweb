@@ -437,7 +437,7 @@ h3 {
 }
 
 .bar.hidden {
-  width: 8rem;
+  width: 25%;
   background-color: greenyellow;
   margin-left: 0;
   display: none;
@@ -478,5 +478,9 @@ h3 {
 }
 
 .right-section .bar.hidden {
-  width: 4rem;
+  width: 40%;
+}
+
+.right-section .fa-circle {
+  top: -0.3rem;
 }
